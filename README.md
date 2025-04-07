@@ -15,17 +15,10 @@ Dans un premier temps, installer les dépendances :
 ```bash
 composer install
 ```
-
-### Docker (optionnel)
-Si vous souhaitez utiliser Docker Compose, il vous suffit de lancer la commande suivante :
-```bash
-docker compose up -d
-```
-
 ## Configuration
 
 ### Base de données
-Actuellement, le fichier `.env` est configuré pour la base de données PostgreSQL mise en place dans `docker-compose.yml`.
+Actuellement, le fichier `.env` est configuré pour la base de données PostgreSQL et utilisé également pour les tests CI/CD.
 Cependant, vous pouvez créer un fichier `.env.local` si nécessaire pour configurer l'accès à la base de données.
 Exemple :
 ```dotenv
